@@ -1,0 +1,308 @@
+/* -------- futures -------- */
+    .features{
+        /* display */
+        justify-content: space-around;
+    }
+    .feature{
+        /* size */
+        width: 46vw;
+        /* space */
+        margin: 5px;
+    }
+    .feature > img{
+        /* size */
+        width: 43vw;
+        max-width: 300px;
+    }
+    .full-width{
+        /* size */
+        width: 98vw;
+    }
+    /* ------------------------ */
+
+
+
+
+
+    <!---------------- features ---------------->
+    <section class="features">
+        <p class="statement">
+            Why Homeats
+        </p>
+        <div class="feature">
+            <img src="images/features/feature1.jpg" alt="feature1">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="images/features/feature2.jpg" alt="feature2">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="images/features/feature3.jpg" alt="feature3">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="feature half-width">
+            <img src="images/features/feature4.jpg" alt="feature4">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="feature full-width half-width">
+            <img src="images/features/feature5.jpg" alt="feature5">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </section>
+    <!---------------------------------------->
+
+
+
+
+
+    media 360
+
+    /* -------- futures -------- */
+    .feature{
+      /* size */
+      width: 90vw;
+      /* space */
+      margin-bottom: 15px;
+  }
+  .feature > img{
+      /* size */
+      width: 350px;
+  }
+  /* ------------------------ */
+
+
+
+
+
+  media 560 
+  /* -------- futures -------- */
+    .features{
+        /* display */
+        justify-content: space-around;
+    }
+    .feature{
+        /* size */
+        width: 46vw;
+        /* space */
+        margin: 5px;
+    }
+    .feature > img{
+        /* size */
+        width: 43vw;
+        max-width: 300px;
+    }
+    .full-width{
+        /* size */
+        width: 98vw;
+    }
+    /* ------------------------ */
+
+
+
+media 800
+
+
+/* -------- futures -------- */
+    .feature{
+        /* size */
+        width: 31vw;
+    }
+    .feature > img{
+        /* size */
+        width: 28vw;
+    }
+    .half-width{
+        /* size */
+        width: 47vw;
+    }
+    /* ------------------------ */
+
+
+
+
+
+
+
+    '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <p class="statement">
+            Blogs That Interest You
+        </p>
+        <div class="blogs-slider">
+            <img src="images/left-chevron.png" alt="left">
+            <div class="blog-box">
+                <img src="images/articles/article1.jpg" alt="article1">
+                <div class="blog-content">
+                    <a href="" class="blog-title">
+                        Blog Title 
+                    </a>
+                    <article class="blog-article">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rem quae ut id, ullam quas!
+                    </article>
+                    <p class="blog-author">
+                        By: Mustafa Bitar
+                    </p>
+                </div>
+            </div>
+            <img src="images/right-chevron.png" alt="right">
+        </div>
+    </section>
+
+
+
+
+
+
+
+    .blogs-slider{
+    /* display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* space */
+    margin: 35px 0;
+}
+/* left and right arrows */
+.blogs-slider > img{
+    cursor: pointer;
+    /* size */
+    width: 35px;
+    height: 35px;
+}
+.blog-box{
+    background-color: #fff;
+    border-radius: 15px;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* blog main img */
+.blog-box > img{
+    border-radius: 15px 15px 0 0;
+    /* size */
+    width: calc(100vw - 70px);
+    max-width: 500px;
+}
+.blog-content{
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* size */
+    height: 30vh;
+    max-width: 500px;
+    /* space */
+    padding: 15px;
+}
+.blog-title{
+    font-size: 22px;
+}
+.blog-article{
+    text-align: center;
+    font-size: 15px;
+}
+.blog-author{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+media 360
+ /* -------- blogs -------- */
+    /* left and right arrows */
+    .blogs-slider > img{
+        cursor: pointer;
+        /* size */
+        width: 60px;
+        height: 60px;
+    }
+    /* blog main img */
+    .blog-box > img{
+        /* size */
+        width: calc(100vw - 120px);
+        /* space */
+        margin-bottom: 10px;
+    }
+    /* ------------------------ */
+
+
+
+    media 460
+    /* -------- blogs -------- */
+    .blog-content{
+        /* size */
+        height: 35vh;
+        max-height: 230px;
+    }
+    .blog-title{
+        font-size: 30px;
+    }
+    .blog-article{
+        font-size: 20px;
+        /* space */
+        margin: 25px;
+    }
+    .blog-author{
+        font-size: 17px;
+    }
+    /* ------------------------ */
+
+
+
+
+
+
+
+
+    

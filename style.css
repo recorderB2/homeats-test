@@ -1,0 +1,571 @@
+/* main sitting */
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+/* font-family: 'Basic', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Basic", sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  /* background-color: #f0f0f0; */
+  overflow-x: hidden;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: grey;
+}
+/* ------------------------ */
+
+/* -------- clases -------- */
+.statement {
+  text-align: center;
+  font-size: 23px;
+  /* size */
+  width: 100vw;
+  /* space */
+  margin: 6vw 5px 30px 5px;
+}
+.flex-box {
+  display: flex;
+}
+/* ------------------------ */
+
+/* -------- header -------- */
+header {
+  /* size */
+  width: 100vw;
+  /* move */
+  position: fixed;
+  z-index: 1;
+}
+.header-bars {
+  color: #1a4951;
+  cursor: pointer;
+  /* size */
+  font-size: 30px;
+  /* move */
+  position: relative;
+  bottom: 25px;
+  /* space */
+  margin: 0 0 0 4vw;
+}
+.header-logo {
+  /* size */
+  width: 200px;
+  /* space */
+  margin: 10px 2vw 2px 3vw;
+}
+/* ------------------------ */
+
+/* -------- nav -------- */
+.nav-content {
+  background-color: #f0f0f0;
+  z-index: 3;
+  /* dispaly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* size */
+  width: 300px;
+  max-width: 88vw;
+  height: 100vh;
+  /* move */
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: transform 130ms ease-in-out;
+}
+.nav-logo {
+  /* size */
+  width: 200px;
+  height: 60px;
+  /* space */
+  margin: 9px 0 20px 0;
+}
+.nav-page > a {
+  text-align: center;
+  /* display */
+  display: block;
+  /* space */
+  margin: 25px 10px;
+}
+.nav-download {
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-download > p {
+  /* space */
+  margin: 10px 0;
+}
+.nav-app-link {
+  /* size */
+  width: 200px;
+  /* space */
+  margin: 0 5px;
+}
+.nav-shadow {
+  background-color: #0000007c;
+  z-index: 2;
+  cursor: pointer;
+  /* display */
+  display: none;
+  /* size */
+  width: 100vw;
+  height: 100vh;
+  /* move */
+  position: fixed;
+  top: 0;
+}
+/* ------------------------ */
+
+/* -------- main -------- */
+#box {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transition: transform 330ms ease-in-out;
+}
+#box > img {
+  width: 100vw;
+  height: 60vh;
+}
+.main-content {
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* size */
+  height: 60vh;
+  width: 100vw;
+}
+.main-app-link {
+  /* size */
+  width: 200px;
+}
+/* ------------------------ */
+
+/* -------- fetures -------- */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* .features-statement{
+  text-align: left;
+  margin-left: 10px;
+} */
+.feature {
+  /* border: black solid 1px; */
+  padding: 15px;
+  width: 100vw;
+}
+.feature > img {
+  width: 50px;
+}
+.feature > p {
+  margin: 10px 0;
+}
+.feature-title {
+  font-size: 24px;
+}
+.feature-text {
+  font-size: 18px;
+}
+/* ------------------------ */
+
+/* -------- partenrs -------- */
+.partners {
+  /* display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner {
+  /* dispaly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* space */
+  margin: 15px 0;
+}
+.partner > img {
+  /* size */
+  width: 100vw;
+}
+.partner > p {
+  /* space */
+  margin: 5px;
+}
+.partner > a {
+  text-decoration: underline;
+}
+/* ------------------------ */
+
+/* -------- blogs -------- */
+
+.blogs {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs-statement{
+    /* color:red; */
+    font-size: 18px;
+    margin: 0 5px 30px 5px;
+    text-align: center;
+}
+
+.blog-bar {
+  background-color: rgb(243, 243, 243);
+  width: 85vw;
+  height: 40px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+.blog-bar > p {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.blog-bar-active {
+  background-color: rgb(199, 199, 199);
+}
+
+.blog-section {
+  width: 85vw;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+}
+.blog {
+  /* height: 55vh; */
+  /* flex: 1 0 33.333%; */
+  flex: 1 0 100%;
+  /* width: calc(100% / 3); */
+  /* width: 95%;
+    transform: translateX(-000%); */
+}
+#blog1 {
+  /* background-color: blue; */
+}
+/* #blog2{
+    background-color: red;
+}
+#blog3{
+    background-color: green;
+}
+#blog4{
+    background-color: yellow;
+}
+#blog5{
+    background-color: purple;
+} */
+.blog > img {
+  width: 100%;
+}
+.blog-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.blog-text {
+  font-size: 18px;
+}
+.blogs-slider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 90vw;
+  /* background-color: brown; */
+  height: 7vh;
+  margin: 20px 0;
+}
+.blogs-slider > i {
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  margin: 8px;
+}
+.blogs-slider > p {
+  font-size: 18px;
+  margin: 12px;
+}
+/* ------------------------ */
+
+/* -------- footer -------- */
+footer > div {
+  /* space */
+  margin: 25px;
+}
+.footer-title {
+  font-size: 25px;
+  /* space */
+  margin: 10px 0;
+}
+footer > div > a {
+  /* display */
+  display: block;
+  /* space */
+  margin: 10px;
+}
+.footer-app-link {
+  /* size */
+  width: 40vw;
+  margin: 0 2px;
+  max-width: 200px;
+}
+.footer-end {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-media {
+  font-size: 25px;
+  /* size */
+  width: 90vw;
+}
+.social-media > a {
+  /* display */
+  display: block;
+  /* space */
+  margin: 5px;
+}
+.copy-right {
+  font-size: 14px;
+}
+/* ------------------------ */
+
+/* ------------------------ 360px ------------------------ */
+@media (min-width: 360px) {
+}
+/* -------------------------------------------------------- */
+
+/* ------------------------ 460px ------------------------ */
+@media (min-width: 460px) {
+  /* -------- footer -------- */
+  .footer-end {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-media {
+    width: max-content;
+  }
+  /* ------------------------ */
+}
+/* -------------------------------------------------------- */
+
+/* ------------------------ 560px ------------------------ */
+@media (min-width: 560px) {
+  /* -------- main -------- */
+  #box > img {
+    height: 80vh;
+  }
+  .main-content {
+    height: 80vh;
+  }
+  /* ------------------------- */
+
+  /* -------- features -------- */
+  .feature {
+    padding: 0;
+    width: 46vw;
+    margin: 5px;
+  }
+  /* -------------------------- */
+
+  /* -------- partners -------- */
+  .partners {
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partner {
+    /* dispaly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* space */
+    margin: 5px;
+  }
+  .partner > img {
+    /* size */
+    width: 46vw;
+  }
+  /* ------------------------ */
+
+  /* --------- blogs ----------- */
+
+  .blog-bar {
+    background-color: rgb(243, 243, 243);
+    width: 91.5vw;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .blog-bar > p {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-bar-active {
+    background-color: rgb(199, 199, 199);
+  }
+
+  .blog-section {
+    width: 93vw;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+  }
+  .blog {
+    /* height: 55vh; */
+    /* flex: 1 0 33.333%; */
+    flex: 1 0 48.1%;
+    margin: 0 1%;
+    /* width: calc(100% / 3); */
+    /* width: 95%;
+    transform: translateX(-000%); */
+  }
+  /* ------------------------ */
+}
+/* -------------------------------------------------------- */
+
+/* ------------------------ 700px ------------------------ */
+@media (min-width: 700px) {
+  /* -------- clases -------- */
+  .statement {
+    font-size: 26px;
+  }
+  /* ------------------------ */
+
+  /* -------- main -------- */
+  main {
+    /* background-image: url(images/bg-large.jpg); */
+    /* size */
+    width: 100vw;
+    height: 80vh;
+    /* move */
+    position: relative;
+  }
+  .main-content {
+    /* move */
+    position: absolute;
+    right: calc(50vw - 210px);
+  }
+  .main-app-link {
+    /* size */
+    width: 230px;
+  }
+  /* ------------------------ */
+}
+/* -------------------------------------------------------- */
+
+/* ------------------------ 800px ------------------------ */
+@media (min-width: 800px) {
+  /* -------- footer -------- */
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* ------------------------ */
+}
+/* -------------------------------------------------------- */
+
+/* ------------------------ 900px ------------------------ */
+@media (min-width: 900px) {
+  /* -------- clases -------- */
+  .statement {
+    font-size: 35px;
+  }
+  /* ------------------------ */
+
+  /* -------- main -------- */
+  .main-content {
+    /* move */
+    right: calc(50vw - 280px);
+  }
+  .main-app-link {
+    /* size */
+    width: 300px;
+  }
+  /* ------------------------ */
+
+  /* --------- blogs ----------- */
+
+  .blog-bar {
+    background-color: rgb(243, 243, 243);
+    width: 93.7vw;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .blog-bar > p {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-bar-active {
+    background-color: rgb(199, 199, 199);
+  }
+
+  .blog-section {
+    width: 95vw;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+  }
+  .blog {
+    /* height: 55vh; */
+    flex: 1 0 31.4%;
+    /* flex: 1 0 48.1%; */
+    margin: 0 1%;
+    /* width: calc(100% / 3); */
+    /* width: 95%;
+        transform: translateX(-000%); */
+  }
+  /* ------------------------ */
+
+  /* -------- footer -------- */
+  .footer-end {
+    justify-content: space-around;
+    width: 41vw;
+  }
+  /* .cu-width{
+        width: 270px;
+    } */
+  /* ------------------------ */
+}
+/* -------------------------------------------------------- */
