@@ -305,4 +305,192 @@ media 360
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blogs {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs-statement{
+    /* color:red; */
+    font-size: 18px;
+    margin: 0 5px 30px 5px;
+    text-align: center;
+}
+
+.blog-bar {
+  background-color: rgb(243, 243, 243);
+  width: 85vw;
+  height: 40px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+.blog-bar > p {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.blog-bar-active {
+  background-color: rgb(199, 199, 199);
+}
+
+.blog-section {
+  width: 85vw;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+}
+.blog {
+  /* height: 55vh; */
+  /* flex: 1 0 33.333%; */
+  flex: 1 0 100%;
+  /* width: calc(100% / 3); */
+  /* width: 95%;
+    transform: translateX(-000%); */
+}
+#blog1 {
+  /* background-color: blue; */
+}
+/* #blog2{
+    background-color: red;
+}
+#blog3{
+    background-color: green;
+}
+#blog4{
+    background-color: yellow;
+}
+#blog5{
+    background-color: purple;
+} */
+.blog > img {
+  width: 100%;
+}
+.blog-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.blog-text {
+  font-size: 18px;
+}
+.blogs-slider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 90vw;
+  /* background-color: brown; */
+  height: 7vh;
+  margin: 20px 0;
+}
+.blogs-slider > i {
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  margin: 8px;
+}
+.blogs-slider > p {
+  font-size: 18px;
+  margin: 12px;
+}
+
     
+
+
+
+
+
+    <!-- <section class="blogs">
+        <p class="statement">
+            Business meals are great for many occasions
+        </p>
+        <p class="blogs-statement">
+            Offering food is an effective way to reward employees and engage customers.
+        </p>
+        <div class="blog-bar">
+            <p>
+                Employees
+            </p>
+            <p class="blog-bar-active">
+                Clients
+            </p>
+        </div>
+        <div class="blog-section" id="blog-section1">
+            <div class="blog" id="blog1">
+                <img src="images/articles/article1.jpg" alt="">
+                <p class="blog-title">
+                    Meals in the office
+                </p>
+                <p class="blog-text">
+                    Treat employees to in-office lunches, order special meals, and organize happy hours. Or let employees add items to a shared group order from their own device.
+                </p>
+            </div>
+            <div class="blog" id="blog2">
+                <img src="images/articles/article2.jpg" alt="">
+                <p class="blog-title">
+                    Meals after hours
+                </p>
+                <p class="blog-text">
+                    Keep your late-night employees fueled with their favorite meals. Set time, day, budget, and item restrictions with a meal program or provide vouchers to employees.
+                </p>
+            </div>
+            <div class="blog" id="blog3">
+                <img src="images/articles/article3.jpg" alt="">
+                <p class="blog-title">
+                    Meals at home
+                </p>
+                <p class="blog-text">
+                    Offer stipends for remote employees, or encourage virtual event attendance with meal vouchers. You can set rules based on location, time, and much more.
+                </p>
+            </div>
+            <div class="blog" id="blog4">
+                <img src="images/articles/article4.jpg" alt="">
+                <p class="blog-title">
+                    Meals while traveling
+                </p>
+                <p class="blog-text">
+                    Whether for traveling sales teams or employees at client sites, you can set up meal programs to make sure they’re well fed no matter where they are.
+                </p>
+            </div>
+        </div>
+        <div class="blogs-slider">
+            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>
+                1/2
+            </p>
+        </div>
+    </section> -->

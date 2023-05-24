@@ -42,6 +42,11 @@ document.addEventListener("click", function(event){
 let button = document.getElementById("button");
 let box = document.getElementById("box");
 
+
+
+function sliding(c,m,r){
+
+}
 let c = 3;
 let m = 0;
 let r = true; 
@@ -67,7 +72,10 @@ button.onclick = function(){
     }
 }
 
-setInterval(function(){
-    button.click();
-},3000)
 
+// setInterval(function(){
+//     button.click();
+// },3000)
+
+// /////////////////////////////////////////////
+let 
