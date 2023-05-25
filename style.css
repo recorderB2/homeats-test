@@ -193,6 +193,64 @@ nav .social-media{
 }
 /* ------------------------ */
 
+/* -------- stories -------- */
+.stories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.stories-statement {
+  text-align: left;
+  margin-left: 80px;
+}
+.stories > img{
+  width: 45%;
+  margin-right: 8%;
+}
+.story{
+  width: 65%;
+  margin-left: 10%;
+}
+.story-title{
+  font-size: 24px;
+  width: 60%;
+  margin-left: 10%;
+}
+.story-text{
+  font-size: 18px;
+  width: 60%;
+  margin-left: 10%;
+}
+
+
+.stories-slider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 90vw;
+  /* background-color: brown; */
+  /* height: 7vh; */
+  margin: 20px 30px 20px 0;
+}
+.stories-slider > i {
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  margin: 8px;
+}
+.stories-slider > p {
+  font-size: 18px;
+  margin: 12px;
+}
+/* ------------------------ */
+
+
+
 /* -------- partenrs -------- */
 .partners {
   /* display */
