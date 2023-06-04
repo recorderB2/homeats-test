@@ -127,7 +127,9 @@ header {
   top: 0;
 }
 nav .social-media{
+  width:100%;
   margin-top: 10px;
+  margin-left: auto;
 }
 /* ------------------------ */
 
@@ -141,7 +143,7 @@ nav .social-media{
 }
 #box > img {
   width: 100vw;
-  height: 60vh;
+  height:100vh;
 }
 /* .main-statement{
     font-size: 20px;
@@ -154,13 +156,18 @@ nav .social-media{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  bottom: 130px;
   /* size */
-  height: 60vh;
+  height: 90vh;
   width: 100vw;
 }
 .main-app-link {
   /* size */
   width: 200px;
+}
+.large{
+  display: none;
 }
 /* ------------------------ */
 
@@ -180,7 +187,8 @@ nav .social-media{
   width: 100vw;
 }
 .feature > img {
-  width: 50px;
+  width: 120px;
+  margin-left: -20px;
 }
 .feature > p {
   margin: 10px 0;
@@ -196,31 +204,33 @@ nav .social-media{
 /* -------- stories -------- */
 .stories{
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   /* background-color: red; */
 }
-.stories-statement {
+/* .stories-statement {
   text-align: left;
-  margin-left: 80px;
-}
+  margin-left: 40px;
+} */
 .stories > img{
-  width: 45%;
-  margin-right: 8%;
+  width: 100%;
+  max-height: 500px;
+  /* margin-right: 8%; */
 }
 .story{
-  width: 65%;
-  margin-left: 10%;
+  /* width: 95%; */
+  /* margin-left: 10%; */
 }
 .story-title{
   font-size: 24px;
-  width: 60%;
-  margin-left: 10%;
+  /* width: 60%; */
+  margin: 0 10px;
 }
 .story-text{
   font-size: 18px;
-  width: 60%;
-  margin-left: 10%;
+  /* width: 60%; */
+  margin: 0 10px;
 }
 
 
@@ -386,6 +396,12 @@ nav .social-media{
 
 
 /* -------- footer -------- */
+footer{
+  /* background-color: rgb(110, 110, 110); */
+  /* margin-bottom: -25px; */
+  /* margin-top: -1px; */
+  /* padding-top: 10px; */
+}
 footer > div {
   /* space */
   margin: 25px;
@@ -430,11 +446,34 @@ footer > div > a {
 
 /* ------------------------ 360px ------------------------ */
 @media (min-width: 360px) {
+  #box > img{
+    height: 40vh;
+  }
+  .main-content{
+    top:120px;
+    height: 70vh;
+  }
+  .small{
+    display: none;
+  }
+  .large{
+    display: inline;
+  }
 }
 /* -------------------------------------------------------- */
 
 /* ------------------------ 460px ------------------------ */
 @media (min-width: 460px) {
+  .stories{
+    position: relative;
+  }
+  .story{
+    position: absolute;
+    /* bottom: 10vw; */
+  }
+  .story-text{
+    width:60%;
+  }
   /* -------- footer -------- */
   .footer-end {
     justify-content: space-between;
@@ -459,12 +498,23 @@ footer > div > a {
 
   
   /* ------------------------- */
+  .story{
+    /* bottom:40vw; */
+    padding-left: 5vw;
+  }
+  .story-title{
+    margin-bottom: 20px;
+
+  }
 
   /* -------- features -------- */
   .feature {
     padding: 0;
     width: 46vw;
     margin: 5px;
+  }
+  .feature > img {
+    width: 150px;
   }
   /* -------------------------- */
 
@@ -488,6 +538,22 @@ footer > div > a {
     width: 46vw;
   }
   /* ------------------------ */
+
+  main {
+    /* background-image: url(images/bg-large.jpg); */
+    /* size */
+    width: 100vw;
+    height: 80vh;
+    /* move */
+    position: relative;
+  }
+    .main-content {
+    /* move */
+    position: absolute;
+    left: calc(50vw - 200px);
+    top: 100px;
+    
+  }
 
   /* --------- blogs ----------- */
 
@@ -538,7 +604,16 @@ footer > div > a {
     font-size: 26px;
   }
   /* ------------------------ */
-
+  .story{
+    /* bottom:40vw; */
+  }
+  .story-title{
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+  .story-text{
+    font-size: 22px;
+  }
   /* -------- main -------- */
   main {
     /* background-image: url(images/bg-large.jpg); */
@@ -548,13 +623,7 @@ footer > div > a {
     /* move */
     position: relative;
   }
-  .main-content {
-    /* move */
-    position: absolute;
-    left: calc(50vw - 200px);
-    top: 100px;
-    
-  }
+
   .main-app-link {
     /* size */
     width: 230px;
