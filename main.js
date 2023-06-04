@@ -71,7 +71,8 @@ button.onclick = function(){
         }
     }
 }
-
+let fb = document.getElementById("fb");
+let footer = document.getElementById("");
 
 // setInterval(function(){
 //     button.click();
