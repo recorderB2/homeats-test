@@ -436,11 +436,13 @@ footer > div > a {
   width: 90vw;
 }
 .social-media > a {
-  color: white;
   /* display */
   display: block;
   /* space */
   margin: 5px;
+}
+.footer-end .social-media > a {
+  color: white;
 }
 .copy-right {
   font-size: 14px;
