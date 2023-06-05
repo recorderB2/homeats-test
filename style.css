@@ -143,7 +143,7 @@ nav .social-media{
 }
 #box > img {
   width: 100vw;
-  height:90vh;
+  height:85vh;
 }
 /* .main-statement{
     font-size: 20px;
@@ -159,8 +159,11 @@ nav .social-media{
   position: relative;
   bottom: 130px;
   /* size */
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
+}
+.main-content .statement{
+  margin-bottom: 5px;
 }
 .main-app-link {
   /* size */
@@ -451,26 +454,32 @@ footer > div > a {
 }
 /* ------------------------ */
 
+/* ------------------------ 300px ------------------------ */
+@media (min-width: 300px) {
+}
 /* ------------------------ 360px ------------------------ */
 @media (min-width: 360px) {
-  #box > img{
-    height: 40vh;
+  #box > img {
+    height:100vh;
+    /* max-width: 400px; */
   }
   .main-content{
-    top:120px;
-    height: 70vh;
-  }
-  .small{
-    display: none;
-  }
-  .large{
-    display: inline;
+    top: -100px;
   }
 }
 /* -------------------------------------------------------- */
 
 /* ------------------------ 460px ------------------------ */
 @media (min-width: 460px) {
+  #box > img {
+    height:120vw;
+  }
+  .main-content{
+    top: 18vw;
+    left: 25vw;
+    
+  }
+
   .stories{
     position: relative;
   }
@@ -496,6 +505,15 @@ footer > div > a {
 /* ------------------------ 560px ------------------------ */
 @media (min-width: 560px) {
   /* -------- main -------- */
+  #box > img{
+    height: 40vh;
+  }
+  .small{
+    display: none;
+  }
+  .large{
+    display: inline;
+  }
   #box > img {
     height: 80vh;
   }
