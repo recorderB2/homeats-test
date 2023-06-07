@@ -78,7 +78,7 @@ header {
   max-width: 88vw;
   height: 100vh;
   /* move */
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: -300px;
   transition: transform 130ms ease-in-out;
@@ -143,7 +143,7 @@ nav .social-media{
 }
 #box > img {
   width: 100vw;
-  height:85vh;
+  height:80vh;
 }
 /* .main-statement{
     font-size: 20px;
@@ -505,9 +505,6 @@ footer > div > a {
 /* ------------------------ 560px ------------------------ */
 @media (min-width: 560px) {
   /* -------- main -------- */
-  #box > img{
-    height: 40vh;
-  }
   .small{
     display: none;
   }
@@ -515,10 +512,10 @@ footer > div > a {
     display: inline;
   }
   #box > img {
-    height: 80vh;
+    height: auto;
   }
   .main-content {
-    height: 80vh;
+    height: 50vh;
   }
 
   
@@ -628,6 +625,11 @@ footer > div > a {
   .statement {
     font-size: 26px;
   }
+  #box > img {
+    height: auto;
+    position: relative;
+    bottom: 10vh;
+  }
   /* ------------------------ */
   .story{
     /* bottom:40vw; */
@@ -681,7 +683,7 @@ footer > div > a {
     /* move */
     position: absolute;
     left: calc(50vw - 250px);
-    top: 60px;
+    top: 150px;
   }
   .main-app-link {
     /* size */
@@ -739,5 +741,10 @@ footer > div > a {
         width: 270px;
     } */
   /* ------------------------ */
+}
+@media (min-width:1000px) {
+  #box > img {
+    bottom: 15vw;
+  }
 }
 /* -------------------------------------------------------- */
